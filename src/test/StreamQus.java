@@ -23,7 +23,7 @@ public class StreamQus {
 		System.out.println(ans);
 
 		List<String> filteredAutherNameList = listOfBooks.stream() // Stream of book
-                .map(book -> book.getAuthor()) // Stream<book> to Stream<Author>
+                .map(Book::getAuthor) // Stream<book> to Stream<Author>
                 .filter(author -> author.getAge() >= 30) // Filter the author whose Age is >=30
                 .map(Author::getLastName) //Stream<Author> to Stream<Name>
                 .map(String::toUpperCase) // Convert name as upper case

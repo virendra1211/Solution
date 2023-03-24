@@ -15,7 +15,7 @@ public class PalidromeExtrachar {
 	                        "removing any character");
 	        else
 	            System.out.println("Possible by removing" +
-	                            " character at index " + idx + " - "+str.charAt(4));
+	                            " character at index " + idx + " - "+str.charAt(idx));
 	}
 
 	static boolean isPalindrome(String str, int low, int high) {

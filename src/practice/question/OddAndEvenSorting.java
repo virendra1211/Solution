@@ -65,6 +65,7 @@ public class OddAndEvenSorting {
                     return (a - b);
  
                 // If both numbers are odd larger number
+                
                 // should be placed at lower index
                 if (a % 2 != 0 && b % 2 != 0)
                     return (b - a);
