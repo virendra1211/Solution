@@ -24,6 +24,19 @@ public class SolutionWhirlpool {
 		
 		String str = "abc23598";
 
+		
+		
+		IntStream.range(0, str.length()).filter(index -> Character.isAlphabetic(str.charAt(index))).map(p -> str.charAt(p)).
+		mapToObj(g ->g).map(Object::toString).forEach(System.out::println);
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		int sum = IntStream.range(0, str.length()).filter(index -> Character.isDigit(str.charAt(index)))
 				.map(e -> Integer.parseInt(str.charAt(e)+"")).peek(System.out::println)
 				.sum();
